@@ -1,0 +1,34 @@
+@import "../../styles/general";
+
+.container {
+  max-width: 600px;
+  margin: 32px auto 16px auto;
+}
+
+.input {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-width: 220px;
+  box-sizing: border-box;
+  text-align: center;
+  @include _font(700, 24, cornflowerblue);
+  background: transparent;
+  border: 0px;
+  border-bottom: 1px solid cornflowerblue;
+  margin: auto;
+  padding: 8px;
+
+  &:focus {
+    border: 0px;
+    outline: 0;
+    border-bottom: 2px solid royalblue;
+  }
+}
+
+.error {
+  @include _font(400, 16, firebrick);
+  text-align: center;
+  margin: 8px auto;
+  min-height: 20px;
+}
