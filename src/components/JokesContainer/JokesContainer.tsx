@@ -1,7 +1,7 @@
 import loadingImg from "../../assets/loading.gif";
 import { useGetJokesQuery } from "@/store/reducers/jokesApi";
 import styles from "./JokesContainer.module.scss";
-import { Fragment, useEffect } from "react";
+import { useEffect } from "react";
 import Joke from "../Joke/Joke";
 import Image from "next/image";
 import { useSelector } from "react-redux";
