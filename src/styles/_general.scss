@@ -1,0 +1,19 @@
+@mixin _hover {
+  @media (hover: hover) {
+    &:hover {
+      @content;
+    }
+  }
+}
+
+@mixin _mobile {
+  @media (max-width: 891.98px) {
+    @content;
+  }
+}
+
+@mixin _font($fontWeight, $fontSize, $fontColor) {
+  font-weight: $fontWeight;
+  font-size: #{$fontSize}px;
+  color: $fontColor;
+}
