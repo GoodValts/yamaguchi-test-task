@@ -1,11 +1,17 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 type JokesApi = {
-  icon_url: string;
-  id: string;
-  url: string;
-  value: string;
-}[];
+  total: number;
+  result: {
+    categories: string[];
+    created_at: string;
+    icon_url: string;
+    id: string;
+    updated_at: string;
+    url: string;
+    value: string;
+  }[];
+};
 
 export const jokesApi = createApi({
   reducerPath: "jokesApi",
@@ -14,7 +20,7 @@ export const jokesApi = createApi({
   }),
   endpoints: (builder) => ({
     getJokes: builder.query<JokesApi, string>({
-      query: (searchString) => `jokes/${searchString}`,
+      query: (searchString) => `jokes/search?query=${searchString}`,
     }),
   }),
 });

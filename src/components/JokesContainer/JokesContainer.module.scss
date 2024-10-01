@@ -1,0 +1,28 @@
+@import "../../styles/general";
+
+.container {
+  margin: 16px auto;
+  max-width: 1600px;
+}
+
+.counter {
+  margin: 8px auto;
+}
+
+.jokes {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.loading {
+  display: block;
+  margin: 32px auto;
+  max-width: 100%;
+}
+
+.resultError {
+  text-align: center;
+  margin: 8px auto;
+  @include _font(400, 16, slategray);
+}

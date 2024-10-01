@@ -7,7 +7,13 @@
 }
 
 @mixin _mobile {
-  @media (max-width: 891.98px) {
+  @media (max-width: 767.98px) {
+    @content;
+  }
+}
+
+@mixin _tablet {
+  @media (max-width: 1279.98px) {
     @content;
   }
 }
