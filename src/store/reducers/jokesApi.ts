@@ -5,7 +5,7 @@ type JokesApi = {
   id: string;
   url: string;
   value: string;
-};
+}[];
 
 export const jokesApi = createApi({
   reducerPath: "jokesApi",
