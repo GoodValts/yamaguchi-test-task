@@ -10,7 +10,7 @@
 
 ## Description
 
-Test task for the frontend position at [Yamaguchi](https://www.yamaguchi.ru/). Deadline - this evening ;)
+Test task for the frontend position at [Yamaguchi](https://www.yamaguchi.ru/). Deadline - 01.10.2024 ;)
 
 [PR link](https://github.com/GoodValts/yamaguchi-test-task/pull/3)
 
